@@ -8,5 +8,8 @@ module.exports = {
             dialect: process.env.DIALECT || 'sqlite',
             storage: './phwebblog-db.sqlite'
         },
-    }   
+    },
+    authentication:{
+        jwtSecret:"test"
+    }
 }
