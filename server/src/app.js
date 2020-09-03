@@ -23,11 +23,12 @@ sequelize.sync({force: false}).then(() => {
     })
 })
 
- 
+app.use('/assets', express.static('public'))
 
 app.get('/status', function (req, res){
     res.send('Hello nodejs server')
 })
+
 
  
 
